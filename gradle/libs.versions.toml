@@ -1,0 +1,32 @@
+[versions]
+detekt = "2.0.0-alpha.3"
+dokka = "2.2.0"
+klogging = "0.11.8"
+kotlin = "2.4.0-RC"
+kotlin-datetime = "0.8.0-rc02-0.6.x-compat"
+kotlin-html = "0.12.0"
+kotlin-serialization = "1.11.0"
+kotlin-coroutines = "1.11.0-rc02"
+kotlinpoet = "2.3.0"
+spotless = "8.5.1"
+versions = "0.54.0"
+
+[libraries]
+klogging = { module = "io.klogging:klogging", version.ref = "klogging" }
+kotlin-coroutines = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlin-coroutines" }
+kotlin-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "kotlin-coroutines" }
+kotlin-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlin-datetime" }
+kotlin-html = { module = "org.jetbrains.kotlinx:kotlinx-html", version.ref = "kotlin-html" }
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+kotlin-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-core", version.ref = "kotlin-serialization" }
+kotlin-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlin-serialization" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlinpoet = { module = "com.squareup:kotlinpoet", version.ref = "kotlinpoet" }
+
+[plugins]
+detekt = { id = "dev.detekt", version.ref = "detekt" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
+multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+versions = { id = "com.github.ben-manes.versions", version.ref = "versions" }
